@@ -7,7 +7,7 @@ public class Colvert extends Canard {
 
     public String afficher() {
         // aspect d'un colvert
-        return "Canart à tête verte";
+        return "Canard à tête verte";
     }
 
     public String nager() {

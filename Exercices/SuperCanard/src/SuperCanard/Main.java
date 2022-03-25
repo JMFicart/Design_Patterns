@@ -32,5 +32,16 @@ public class Main {
             System.out.println("Vol : " + c.voler());
             System.out.println("");
         }
+
+        System.out.println("Après coup de fusil");
+
+        for (Canard c : mare){
+            c.setComportementCancan(new Begayer(c.getComportementCancan()));
+            System.out.println("Nager : " + c.nager());
+            System.out.println("Aspect : " + c.afficher());
+            System.out.println("Son : " + c.cancaner());
+            System.out.println("Vol : " + c.voler());
+            System.out.println("");
+        }
     }
 }

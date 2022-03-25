@@ -29,5 +29,9 @@ public class Canard {
         comportementCancan = cc;
     }
 
+    public ComportementCancan getComportementCancan() {
+        return comportementCancan;
+    }
+
     // Autres méthodes propres aux canards ...
 }
