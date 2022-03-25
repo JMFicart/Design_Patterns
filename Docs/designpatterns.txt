@@ -1,0 +1,24 @@
+1. Extraire ce qui varie et l'encapsuler pour ne pas affecter le reste du code.
+
+2. Programmer une interface et non une implémentation.
+
+implémentation
+
+	Chien c = new Chien():
+	c.aboyer();
+
+interface
+
+	Animal a = new Chien();
+	a.emettreson();
+
+affecter l'objet de l'implémentation
+
+	Animal a = getAnimal();
+	a.emettreson();
+
+3. Préférer la composition à l'héritage.
+
+Pattern Stratégie définit une famille d'algorithmes, encapsule chacun d'eux et les rend interchangeables.
+Stratégie permet à l'algorithme de varier indépendamment des clients qui l'utilisent.
+
