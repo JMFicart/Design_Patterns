@@ -34,6 +34,7 @@ public class Main {
         }
 
         System.out.println("Après coup de fusil");
+        System.out.println("");
 
         for (Canard c : mare){
             c.setComportementCancan(new Begayer(c.getComportementCancan()));
