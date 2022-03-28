@@ -2,7 +2,7 @@ package Labyrinthe;
 
 import Labyrinthe.Interfaces.LabyrinthePosition;
 
-public class AbstractLabyrintheElement {
+public abstract class AbstractLabyrintheElement {
     private LabyrinthePosition position;
 
     public LabyrinthePosition getPosition() {

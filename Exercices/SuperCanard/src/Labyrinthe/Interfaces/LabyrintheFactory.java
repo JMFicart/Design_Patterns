@@ -1,15 +1,9 @@
 package Labyrinthe.Interfaces;
 
 public interface LabyrintheFactory {
-    public default Mur createMur(){
-        return null;
-    }
+    public Mur createMur();
 
-    public default Porte createPorte(){
-        return null;
-    }
+    public Porte createPorte();
 
-    public default Piece createPiece(){
-        return null;
-    }
+    public Piece createPiece();
 }

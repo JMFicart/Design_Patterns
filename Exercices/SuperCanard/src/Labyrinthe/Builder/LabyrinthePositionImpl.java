@@ -37,7 +37,24 @@ public class LabyrinthePositionImpl implements LabyrinthePosition {
         return result;
     }
 
-    public void getPosition(){
-
+    @Override
+    public LabyrinthePosition getPosition(Direction direction) {
+        LabyrinthePosition labyrinthePos = null;
+        
+        switch (direction) {
+            case Nord:
+                labyrinthePos = new LabyrinthePositionImpl(line - 1, column);
+                break;
+            case Est:
+                labyrinthePos = new LabyrinthePositionImpl(line, column + 1);
+                break;
+            case Sud:
+                labyrinthePos = new LabyrinthePositionImpl(line + 1, column);
+                break;
+            case Ouest:
+                labyrinthePos = new LabyrinthePositionImpl(line, column - 1);
+                break;
+        }
+        return labyrinthePos;
     }
 }
