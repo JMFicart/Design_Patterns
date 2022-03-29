@@ -5,6 +5,7 @@ import Labyrinthe.Interfaces.LabyrintheFactory;
 public class ArrayLabyrintheBuilder implements LabyrintheBuilder {
     private ArrayLabyrinthe labyrinthe;
     private LabyrintheFactory factory;
+
     @Override
     public void begin(int nbLig, int nbCol, LabyrintheFactory factory) {
         this.factory = factory;

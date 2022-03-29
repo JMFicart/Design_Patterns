@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class LabyrintheFileReader {
-    void read(File file, LabyrintheBuilder builder, LabyrintheFactory factory) throws FileNotFoundException {
+    public void read(File file, LabyrintheBuilder builder, LabyrintheFactory factory) throws FileNotFoundException {
         try (Scanner scan = new Scanner(file)) {
             ArrayList<String> list = new ArrayList<>();
             int nbLine = 0;
@@ -35,16 +35,19 @@ public class LabyrintheFileReader {
                             break;
 
                         case 'e':
+                            builder.addPiece(lig, col);
                             builder.setEntry(lig, col);
                             break;
 
-                        case '*':
+                        case 'm':
                             builder.addMur(lig, col);
                             break;
                     }
-
                 }
             }
+            builder.end();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
 }
