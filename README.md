@@ -5,3 +5,6 @@ https://gayerie.dev/epsi-b3-java/langage_java/heritage_composition.html
 
 GitHub
 https://github.com/YannickBoogaerts/java2021_design_pattern.git
+
+Clonage d'objets
+https://learntutorials.net/fr/java/topic/2830/clonage-d-objets
