@@ -12,4 +12,13 @@ public class Begayer implements ComportementCancan {
         // Implémente le cancanement.
         return cc;
     }
+
+    @Override
+    public Object clone() {
+        try {
+            return super.clone();
+        } catch (CloneNotSupportedException e) {
+            return null;
+        }
+    }
 }

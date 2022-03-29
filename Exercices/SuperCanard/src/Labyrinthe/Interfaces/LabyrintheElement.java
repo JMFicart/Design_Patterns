@@ -5,5 +5,5 @@ public interface LabyrintheElement {
 
     LabyrinthePosition getPosition();
 
-    void setPosition();
+    void setPosition(LabyrinthePosition position);
 }

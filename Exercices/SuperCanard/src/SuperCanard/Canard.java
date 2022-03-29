@@ -33,5 +33,10 @@ public class Canard {
         return comportementCancan;
     }
 
+    public Object clone() throws CloneNotSupportedException {
+        Canard clone = (Canard) super.clone();
+        clone.comportementCancan = (ComportementCancan) getComportementCancan().clone();
+        return clone;
+    }
     // Autres méthodes propres aux canards ...
 }
